@@ -1,5 +1,5 @@
 # DeliveryService 🚀
-<img src="https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png" alt="FastAPI Logo" style="width: 300px; display: block; margin: 0 auto;"/>
+<img src="https://www.hanharts-trading-technologies.com/static/media/logo.cf6b162c727d6e9600d7.png" alt="FastAPI Logo" style="width: 300px; display: block; margin: 0 auto;"/>
 
 
 Welcome to ****DeliveryService****, a cutting-edge solution designed for the efficient delivery of data generated within your infrastructure! 🌟
