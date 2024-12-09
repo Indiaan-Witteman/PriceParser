@@ -18,8 +18,8 @@ tags_metadata = [
 
 app = FastAPI(
     openapi_tags=tags_metadata,
-    title="Delivery Server",
-    summary="""The backend of a application that enables users to get the data.""",
+    title="Price Parser",
+    summary="""The demo application that shows user how price data can be extracted from text.""",
     version="0.0.1",
     terms_of_service="http://example.com/terms/",
     contact={
