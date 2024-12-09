@@ -17,4 +17,4 @@ RUN pip install --upgrade pip && \
 EXPOSE 8080
 
 #Startup the python server
-ENTRYPOINT ["uvicorn", "src.DeliveryServer.server.server:app", "--host", "0.0.0.0", "--port", "8080"]
+ENTRYPOINT ["uvicorn", "src.PriceParser.server.server:app", "--host", "0.0.0.0", "--port", "8080"]
