@@ -7,7 +7,7 @@ WORKDIR /app
 # Copy the entire app into the container at /app
 COPY . /app
 
-# copy the .env file 
+# Copy the .env file into the container
 COPY .env /app/.env
 
 # Check if the .env file exists
@@ -15,6 +15,9 @@ RUN test -f .env || (echo ".env file is missing!" && exit 1)
 
 # Check if OPENAI_API_KEY is present in .env
 RUN grep -q "OPENAI_API_KEY=" .env || (echo "OPENAI_API_KEY is missing in .env!" && exit 1)
+
+# Set environment variables from the .env file
+ENV OPENAI_API_KEY=${OPENAI_API_KEY}
 
 # Install any needed packages specified in requirements.txt
 RUN pip install --upgrade pip && \

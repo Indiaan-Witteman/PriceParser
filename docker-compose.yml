@@ -11,5 +11,4 @@ services:
     restart: always
     environment:
       - CONTAINERNAME=parser-demo
-    env_file:
-      - ./.env
+      - OPENAI_API_KEY=${OPENAI_API_KEY}

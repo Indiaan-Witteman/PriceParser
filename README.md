@@ -69,7 +69,7 @@ If a `docker-compose.yml` is already included in the project:
 
 **Start the Service:**
 ```bash
-docker-compose up --build
+docker-compose --env-file .env up --build
 ```
 Access the Application: Open your browser and navigate to http://localhost:8050.
 
