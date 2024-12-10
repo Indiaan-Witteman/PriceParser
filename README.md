@@ -2,7 +2,7 @@
 
 Welcome to **PriceParser**, an advanced tool designed to parse and extract pricing information with precision and efficiency. This project is tailored to meet the needs of developers looking to handle and process pricing data seamlessly.
 
-Build for the Automation group by Leo Hanhart as a assigment for a job interview.
+Build for the Automation Group by Leo Hanhart as a assigment for a job interview.
 ---
 
 ## Table of Contents 📚
