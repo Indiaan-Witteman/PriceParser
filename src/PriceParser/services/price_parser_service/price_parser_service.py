@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Dec 9 16:56:34 2024
+
+@author: Gebruiker
+"""
+
 from openai import OpenAI
 import json
 from PriceParser.utils.utils import open_ai_api_key as api_key  # Use your custom import for the API key

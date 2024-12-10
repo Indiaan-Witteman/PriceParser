@@ -1,17 +1,12 @@
-version: '3'
+version: '1'
 
 services:
-  deliveryserver:
+  parser-demo:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: delivery-server
-    networks:
-      - default
-    ports:
-      - "8080:8080" 
+    container_name: parser-demo
+    network_mode: host  # Use host network mode
     restart: always
     environment:
-      - CONTAINERNAME=delivery-server
-    volumes:
-      - .:/app
+      - CONTAINERNAME=parser-demo

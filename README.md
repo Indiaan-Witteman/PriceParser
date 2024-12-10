@@ -1,111 +1,109 @@
-# DeliveryService 🚀
-<img src="https://www.hanharts-trading-technologies.com/static/media/logo.cf6b162c727d6e9600d7.png" alt="FastAPI Logo" style="width: 300px; display: block; margin: 0 auto;"/>
+# PriceParser 🚀
 
+Welcome to **PriceParser**, an advanced tool designed to parse and extract pricing information with precision and efficiency. This project is tailored to meet the needs of developers looking to handle and process pricing data seamlessly.
 
-Welcome to ****DeliveryService****, a cutting-edge solution designed for the efficient delivery of data generated within your infrastructure! 🌟
-
-# Welcome 
-This project is built for the best developers around, crafted by talented individuals who have made history in data science. Join us on this journey to streamline data delivery and revolutionize how we manage information! 💻💡
-
-Key Features 🌟
-FastAPI: High-performance web framework for building APIs with Python 3.7+.
-Docker: Containerization for easy deployment and scalability.
-Database Connectivity: Efficient data handling with robust database integration and SSH-Tunnel option.
-DTO Support: Streamlined data transfer between services.
-Dependencies 📦
-
-To ensure everything works seamlessly, please make sure you have the following dependencies installed:
+Build for the Automation group by Leo Hanhart as a assigment for a job interview.
+---
 
 ## Table of Contents 📚
 
-- [Installation](#installation)
-- [Project Overview](#project-overview)
+
+- [Introduction](#introduction)
 - [Key Features](#key-features)
 - [Dependencies](#dependencies)
-- [Usage](#usage)
-- [Configuration](#configuration)
-- [Contributing](#contributing)
-- [License](#license)
+- [Run with Docker](#run-with-docker-)
+- [Run with Docker Compose](#run-with-docker-compose-)
+- [Run without Docker](#run-without-docker-)
 
-## Installation 🔧
+---
 
-Follow these steps to get your **DeliveryService** up and running:
 
-### Clone the Repository
+## Introduction
 
-First, clone the repository to your local machine:
+**PriceParser** is built to streamline the process of extracting and delivering pricing data across various systems. Whether you're integrating with external sources, processing raw data, or building dashboards, PriceParser provides a robust framework to handle these tasks efficiently.
+
+---
+
+## Key Features 🌟
+
+- **Parses Price Out Of Plain Text**: Designed to handle unstructured data efficiently.
+- **Docker Support**: Simplified deployment with containerization.
+- **Easy-to-Use Interface**: Straightforward setup and execution process.
+
+---
+
+## Dependencies 📦
+
+Ensure you have the following installed:
+
+- Python 3.11+
+- Docker (for containerized runs)
+- Docker Compose (for Docker Compose runs)
+
+---
+
+## Run with Docker 🐳
+
+**Build the Docker Image:**
+```bash
+docker build -t price-parser .
+docker run -p 8050:8050 --name price-parser price-parser
+```
+Access the Application: Open your browser and navigate to http://localhost:8050.
+
+Stop the Container: To stop the container, run:
 
 ```bash
-git clone https://github.com/Leohanhart/DeliveryService.git
-cd your project
-Create a Virtual Environment
-Set up a virtual environment to manage your dependencies:
+docker stop price-parser
+```
 
-bash
+Remove the Container: If you want to remove the container, run:
+
+```bash
+docker rm price-parser
+```
+
+## Run with Docker Compose 🐳
+
+If a `docker-compose.yml` is already included in the project:
+
+**Start the Service:**
+```bash
+docker-compose up --build
+```
+Access the Application: Open your browser and navigate to http://localhost:8050.
+
+
+## Run without Docker 🖥️
+```bash
+docker rm price-parser
+```
+Clone the Repository:
+
+```bash
+Code kopiëren
+git clone https://github.com/your-repo/PriceParser.git
+cd PriceParser
+```
+Set Up a Virtual Environment:
+
+```bash
+Code kopiëren
 python -m venv venv
-Activate the virtual environment using the command appropriate for your operating system:
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+Install Dependencies:
 
-On Windows:
-venv\Scripts\activate
-
-On macOS/Linux:
-source venv/bin/activate
-
-Install the required dependencies and build the working package with the following command:
+```bash
+Code kopiëren
 pip install -e .
-
-Run Your Project
-Finally, run the main script to start your project:
-
-python src/DeliveryService/Processes/Main.py
-
-# Dont forget to set the python interpreter to the one in the VENV in you IDE.
-Type 'where python' to find your python envoirment.
-Type 'pip list' to check if package is installed correctly.
-
-``` 
-Project Overview 🌐
-DeliveryService is powered by FastAPI, providing a robust server architecture. It utilizes Data Transfer Objects (DTOs) for efficient data handling and communication. With seamless Docker integration, it simplifies deployment and management, making it easy to scale as your needs grow.
-
-The project also includes a comprehensive database connection setup to ensure that your data flows smoothly through the infrastructure, making it a reliable choice for all your data delivery needs! 📦✨
-
-
-dotenv: For loading environment variables.
-FastAPI: For building the API.
-SQLAlchemy: For database interaction (if using SQL).
-Docker: For containerization.
-Configuration ⚙️
-To configure your project, you will need to set up the following environment variables in a .env file:
-
-# .env file template
 ```
-# SSH Configuration
-SSH_NAME=*******
-SSH_HOST=*******
-SSH_PORT=*******
-SSH_USER=*******
-SSH_PASSWORD=*******
+Run the Application:
 
-# DB
-DB_HOST=*******
-DB_PORT=*******
-DB_USER=*******
-DB_PASSWORD=*******
-DB_DATABASE=*******
-
-# Private Container Registry
-PCR_SERVER=*******
-PCR_USER=*******
-PCR_PASSWORD=*******
-Make sure to replace the ******
-
-with your actual configuration values.
+```bash
+python src/PriceParser/services/parser_demo.py
+Access the Application: Open your browser and navigate to http://localhost:8050.
 ```
-Contributing 🤝
-We welcome contributions from everyone! If you have suggestions or improvements, please feel free to fork the repository and submit a pull request. Together, let's make DeliveryService even better!
 
-License 📄
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-
-
+credits to : Leo Hanhart.
+Build for the automation groupe
