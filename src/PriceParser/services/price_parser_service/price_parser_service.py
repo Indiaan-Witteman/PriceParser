@@ -14,7 +14,7 @@ class ProductParserService:
         
         # Replace this with the actual implementation of your function
         text = ProductParserService.parse_email_data(email_text= text)
-        return f"PriceParser: {text}"
+        return f"PriceParser: {text}", text
 
 
 
@@ -96,7 +96,7 @@ if __name__ == "__main__":
 
     # Parse the email data
     try:
-        result = ProductParserService.parse_email_data(email_text)
+        result = ProductParserService.parse_service(email_text)
         print("Parsed Product Data:")
         print(json.dumps(result, indent=2))
     except Exception as e:
