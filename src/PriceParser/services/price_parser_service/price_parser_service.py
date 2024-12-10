@@ -9,6 +9,13 @@ class ProductParserService:
     Methods:
         parse_email_data(email_text): Parses the email text and extracts structured product data for multiple items.
     """
+    @classmethod
+    def parse_service(cls,text):
+        
+        # Replace this with the actual implementation of your function
+        text = ProductParserService.parse_email_data(email_text= text)
+        return f"PriceParser: {text}"
+
 
 
     @classmethod

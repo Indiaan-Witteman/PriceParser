@@ -9,10 +9,6 @@ from dash import Input, Output, State, dcc, html
 from PriceParser.services.price_parser_service.price_parser_service import ProductParserService
 
 # Simulating the parse_service function
-def parse_service(text):
-    # Replace this with the actual implementation of your function
-    text = ProductParserService.parse_email_data(email_text= text)
-    return f"PriceParser: {text}"
 
 # Initialize Dash app
 app = dash.Dash(__name__)
@@ -99,7 +95,7 @@ def update_chat(n_clicks, user_input, chat_history):
         return chat_history
 
     # Append the user input and bot response to chat history
-    bot_response = parse_service(user_input)
+    bot_response = ProductParserService.parse_service(user_input)
     if not chat_history:
         chat_history = ""
     updated_chat = f"{chat_history}\n\nYou: {user_input}\n{bot_response}"
