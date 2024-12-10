@@ -6,7 +6,10 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: parser-demo
-    network_mode: host  # Use host network mode
+    ports:
+      - "8050:8050" 
     restart: always
     environment:
       - CONTAINERNAME=parser-demo
+    env_file:
+      - ./.env

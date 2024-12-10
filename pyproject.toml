@@ -12,6 +12,7 @@ authors = [
 dependencies = [
   "dash",
   "uvicorn",
+  "gunicorn",
   "pandas",
   "requests",
   "python-dotenv",

@@ -7,6 +7,9 @@ WORKDIR /app
 # Copy the entire app into the container at /app
 COPY . /app
 
+# copy the .env file 
+COPY .env /app/.env
+
 # Check if the .env file exists
 RUN test -f .env || (echo ".env file is missing!" && exit 1)
 
