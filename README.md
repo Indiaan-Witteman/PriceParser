@@ -81,21 +81,21 @@ docker rm price-parser
 Clone the Repository:
 
 ```bash
-Code kopiëren
+
 git clone https://github.com/your-repo/PriceParser.git
 cd PriceParser
 ```
 Set Up a Virtual Environment:
 
 ```bash
-Code kopiëren
+
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 Install Dependencies:
 
 ```bash
-Code kopiëren
+
 pip install -e .
 ```
 Run the Application:
