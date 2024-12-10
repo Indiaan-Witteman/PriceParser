@@ -22,4 +22,4 @@ RUN pip install --upgrade pip && \
 EXPOSE 8050
 
 # Run the Dash app
-CMD ["python", "src/PriceParser/services/price_parser_service.py"]
+CMD ["python", "src/PriceParser/services/demo_service/parser_demo.py"]

@@ -10,13 +10,11 @@ authors = [
   {name = "Leo Hanhart", email = "lhanhart1996@gmail.com"},
 ]
 dependencies = [
-  "fastapi",
   "dash",
   "uvicorn",
   "pandas",
   "requests",
   "python-dotenv",
-  "loguru",
   "kombu",
   "docker",
   "pytest",
