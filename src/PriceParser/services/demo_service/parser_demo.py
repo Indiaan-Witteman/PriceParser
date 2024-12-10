@@ -9,7 +9,7 @@ from dash import Input, Output, State, dcc, html, dash_table
 from PriceParser.services.price_parser_service.price_parser_service import ProductParserService
 
 # Initialize Dash app
-app = dash.Dash(__name__)
+app = dash.Dash(__name__, title="Parser Demo")
 
 # App layout
 app.layout = html.Div(
